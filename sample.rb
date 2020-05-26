@@ -10,3 +10,4 @@ sample = SlackNotify::Client.new(webhook_url: ENV['URL'])
 every(10.minutes, 'bot1') do
     sample.notify("スラックぼっと")
 end
+
